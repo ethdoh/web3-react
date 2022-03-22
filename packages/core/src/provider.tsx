@@ -18,7 +18,7 @@ type Web3ContextType = {
   ENSName: ReturnType<Web3ReactPriorityHooks['usePriorityENSName']>
 }
 
-const Web3Context = createContext<Web3ContextType | undefined>(undefined)
+export const Web3Context = createContext<Web3ContextType | undefined>(undefined)
 
 export function Web3ReactProvider({
   children,
